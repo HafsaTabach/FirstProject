@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Home.css">
+    <script src="Js/jquery-3.6.0.js"></script>
+    <script src="Js/myScriptF3.js"></script>
+   
+   
+    <title>Reservation2</title>
+</head>
+<body>
+  <div id="container">
+    <header>
+        <h1>Tourisme A Marrakech</h1>
+        <nav class="navigation">
+            <a href="Home.html" id="index">Home</a> 
+            <a href="Sites.html" >Sites</a>
+            <a href="Monuments.html">Monuments</a>
+            <a href="Contacter.html">Nous Contacter</a>
+            <a href="Reservation1.html">Reservation1</a>
+            <a href="REservation2.html">Reservation2</a>                                                                                                                                              </a>
+        </nav>
+    </header>
+    <main>
+     <aside class="left">
+         <a href="Monuments.html#gueliz">
+             <img src="images/Gueliz.jpg" alt="Guiliz nouvelle ville" title="Guiliz">
+         </a>
+         <a href="Monuments.html#menara" title="Jardin Ménara">
+             <img src="images/Pavillon_Menara.jpg" alt="Menara">
+         </a>
+         <a href="Monuments.html#Koutoubia">
+             <img src="images/koutoubia.jpg" alt="Mosquée Koutoubia" title="Mosquée Koutoubia">
+         </a>
+         <a href="Monuments.html#Kasbah">
+             <img src="images/Mulay_Al_Yazid.jpg" alt="Mosquée de la Kasbah" title="Mosquée de la Kasbah">
+         </a>
+         <a href="Monuments.html#Ourika" title="OurikaRiver">
+             <img src="images/OurikaRiver.jpg" alt="OurikaRiver">
+         </a>
+         <a href="Monuments.html#bahia" title="Bahia Palace">
+             <img src="images/Bahia_Palace.jpg" alt="Palais El Bahia">
+         </a>
+         <a href="Monuments.html#darSaid" title="Musée Dar Si Said">
+             <img src="images/Dar_Si_Said.jpg" alt="Musée Dar Si Said">
+         </a>
+     </aside>  
+     <section class="right">
+          <div class="h2">
+              <h2>Vous êtes la bienvennue à marrakech</h2>
+          </div>
+          
+        
+          <div class="contacter">
+                    <form action="" onsubmit="return checkForm()" >
+                  
+                   <fieldset class="mm">
+                            <legend>Vos données personnelle</legend>
+                            
+                                <table >
+                                    <tr>
+                                       <td>
+                                          <label >
+                                             Nom Complet <span class="required">*</span>
+                                          </label>
+                                       </td>
+                                       <td>
+                                          <input type="text" name="name" class="long" placeholder="votre nom complet"  id="NomComplet"/>
+                                          <span class="error" id="errorname"></span>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <label>
+                                             Votre adresse e-mail <span class="required">*</span>
+                                          </label>
+                                       </td>
+                                       <td>
+                                          <input type="email" name="email" class="long" placeholder="votre email " id="email"
+                                          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+                                         <!--  <span class="error" id="erroremail"></span> -->
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                        <tr>
+                                            <td>
+                                               <label>
+                                                  Votre telephone <span class="required">*</span>
+                                               </label>
+                                            </td>
+                                            <td>
+                                                <input id="telephone" type="tel" name="phone"  placeholder="xx xx xx xx xx"/>
+                                                
+                                            </td>
+                                         </tr>
+                                         <tr>
+                                        <td>
+                                            <label for="n1">Quel est votre âge&nbsp;?</label>
+                                        </td>
+                                        <td>
+                                            <input type="number" min="18" max="70" step="1"  id="age" name="age"
+                                            pattern="\d+" placeholder="18-70">
+                                        </td>
+                                     </tr>
+                                     
+                                     
+                            </table>
+                        </fieldset>
+                        <fieldset class="mm">
+                          <legend>=Votre Chois D'HOTEL</legend>
+                          <table id="tableHotel">
+                            <tbody>
+                              <tr>
+                                <td>Hotel :</td>
+                                <td>
+                                  <select name="" id="hotel">
+                                    <option selected="" disabled=""></option>
+                                    <option value="0">ibis</option>
+                                    <option value="1">tichka</option>
+                                    <option value="2">oudaya</option>
+                                    <option value="3">palace</option>
+                                  </select>
+                                  <span style="color: red">*</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>number de jours</td>
+                                <td>
+                                  <input type="number" style="width: 60px" placeholder="number jours" id="nbrJour" />
+                                  <span style="color: red">* MIN 1 ,MAX 7</span>
+                                </td>
+                              </tr>
+                              <tr id="rowCivilité" >
+                                <td>Civilité :</td>
+                                <td>
+                                  <label>Célibataire</label
+                                  ><input
+                                    type="radio"  style="width: 20px" name="civilité" value="Célibataire"/>  
+                                    
+                                </td>
+                                <td>
+                                  <label>Marié</label
+                                  ><input   type="radio" style="width: 20px" name="civilité"  value="Marié"/>
+                                 
+                                </td>
+                              </tr>
+                              <tr id="rowNbrPersonne" hidden>
+                                <td>number de personne</td>
+                                <td>
+                                  <input type="number" style="width: 60px" placeholder="nbr personne " id="nbpPersonne"/>
+                                   
+                                  <span style="color: red">* MIN 1 ,MAX 5</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Repas :</td>
+                                <td>
+                                  <label>P.Dej</label
+                                  ><input type="checkbox" name="repas"/>
+                                  <label>Dej</label
+                                  ><input type="checkbox"name="repas"/>
+                                    
+                                  <label>Dinner</label
+                                  ><input  type="checkbox"name="repas"/>
+                                   
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                              
+                        </fieldset>
+                            
+                          <div>
+                            <button type="submit">Envoyer</button>
+                            <button type="reset">reinitialiser</button>
+                          </div>
+                       
+                        
+                       </form>
+        
+                
+            
+            <footer>Auteur : Hafsa Tabach</footer>
+          </div>
+       
+</body>
+</html>

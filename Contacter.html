@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Home.css">
+    <title>Nous contacter</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Tourisme A Marrakech</h1>
+            <nav class="navigation">
+                <a href="Home.html" id="index">Home</a> 
+                <a href="Sites.html" >Sites</a>
+                <a href="Monuments.html">Monuments</a>
+                <a href="Contacter.html">Nous Contacter</a>
+                <a href="Reservation1.html">Reservation1</a>
+                <a href="REservation2.html">Reservation2</a>                                                                                                                                              </a>
+            </nav>
+        </header>
+        <main>
+         <aside class="left">
+             <a href="Monuments.html#gueliz">
+                 <img src="images/Gueliz.jpg" alt="Guiliz nouvelle ville" title="Guiliz">
+             </a>
+             <a href="Monuments.html#menara" title="Jardin Ménara">
+                 <img src="images/Pavillon_Menara.jpg" alt="Menara">
+             </a>
+             <a href="Monuments.html#Koutoubia">
+                 <img src="images/koutoubia.jpg" alt="Mosquée Koutoubia" title="Mosquée Koutoubia">
+             </a>
+             <a href="Monuments.html#Kasbah">
+                 <img src="images/Mulay_Al_Yazid.jpg" alt="Mosquée de la Kasbah" title="Mosquée de la Kasbah">
+             </a>
+             <a href="Monuments.html#Ourika" title="OurikaRiver">
+                 <img src="images/OurikaRiver.jpg" alt="OurikaRiver">
+             </a>
+             <a href="Monuments.html#bahia" title="Bahia Palace">
+                 <img src="images/Bahia_Palace.jpg" alt="Palais El Bahia">
+             </a>
+             <a href="Monuments.html#darSaid" title="Musée Dar Si Said">
+                 <img src="images/Dar_Si_Said.jpg" alt="Musée Dar Si Said">
+             </a>
+         </aside>  
+         <section class="right">
+              <div class="h2">
+                  <h2>Vous êtes la bienvennue à marrakech</h2>
+              </div>
+              <div class="contacter">
+                <form name="myform">
+                    <table >
+                        <tr>
+                           <td>
+                              <label>
+                                 Nom Complet <span class="required">*</span>
+                              </label>
+                           </td>
+                           <td>
+                              <input type="text" name="name" class="long" placeholder="votre nom complet"/>
+                              <span class="error" id="errorname"></span>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <label>
+                                 Votre adresse e-mail <span class="required">*</span>
+                              </label>
+                           </td>
+                           <td>
+                              <input type="email" name="email" class="long" placeholder="votre email "/>
+                              <span class="error" id="erroremail"></span>
+                           </td>
+                        </tr>
+                        <tr>
+                            <tr>
+                                <td>
+                                   <label>
+                                      Votre telephone <span class="required">*</span>
+                                   </label>
+                                </td>
+                                <td>
+                                    <input id="phone" type="tel" name="phone"  placeholder="xx xx xx xx xx"/>
+                                    
+                                </td>
+                             </tr>
+                             <tr>
+                            <td>
+                                <label for="n1">Quel est votre âge&nbsp;?</label>
+                            </td>
+                            <td>
+                                <input type="number" min="18" max="70" step="1" id="n1" name="age"
+                                pattern="\d+" placeholder="18-70">
+                            </td>
+                         </tr>
+                         
+                         
+                </table>
+                
+                       <button type="submit">Envoyer</button> 
+                    
+                        <button >reset</button>
+                    
+                
+            </form>
+              </div>
+</body>
+</html>

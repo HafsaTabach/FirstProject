@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourisme In Marrakech</title>
+    <link rel="stylesheet" href="css/Home.css">
+    <link rel="stylesheet" href="css/myTable.css">
+    
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Tourisme A Marrakech</h1>
+            <nav class="navigation">
+                <a href="Home.html" class="active">Home</a>
+                <a href="Sites.html">Sites</a>
+                <a href="Monuments.html">Monuments</a>
+                <a href="Contacter.html">Nous Contacter</a>
+                <a href="Reservation1.html">Reservation1</a>
+                <a href="REservation2.html">REservation2</a>
+            </nav>
+        </header>
+        <main>
+            <aside class="left">
+                <a href="Monuments.html#gueliz">
+                    <img src="images/Gueliz.jpg" alt="Guiliz nouvelle ville" title="Guiliz">
+                </a>
+                <a href="Monuments.html#menara" title="Jardin Ménara">
+                    <img src="images/Pavillon_Menara.jpg" alt="Menara">
+                </a>
+                <a href="Monuments.html#Koutoubia">
+                    <img src="images/koutoubia.jpg" alt="Mosquée Koutoubia" title="Mosquée Koutoubia">
+                </a>
+                <a href="Monuments.html#Kasbah">
+                    <img src="images/Mulay_Al_Yazid.jpg" alt="Mosquée de la Kasbah" title="Mosquée de la Kasbah">
+                </a>
+                <a href="Monuments.html#Ourika" title="OurikaRiver">
+                    <img src="images/OurikaRiver.jpg" alt="OurikaRiver">
+                </a>
+                <a href="Monuments.html#bahia" title="Bahia Palace">
+                    <img src="images/Bahia_Palace.jpg" alt="Palais El Bahia">
+                </a>
+                <a href="Monuments.html#darSaid" title="Musée Dar Si Said">
+                    <img src="images/Dar_Si_Said.jpg" alt="Musée Dar Si Said">
+                </a>
+        
+            </aside>
+            <section class="right">
+                <div class="h2">
+                    <h2>Vous êtes la bienvennue à marrakech</h2>
+                </div>
+                <p>Liste des sites touristiques à marrakech</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Description</th>
+                            <th>Localisation</th>
+                        </tr>
+                        <tr>
+                            <td>Palais Baria</td>
+                            <td>Sites historiques Bâtiments architecturaux</td>
+                            <td>ville Marrakech</td>
+                        </tr>
+                        <tr>
+                            <td>Médina de Marrakech</td>
+                            <td>site historique Monument &amp; Points d'intérêt</td>
+                            <td>medina </td>
+                        </tr>
+                        <tr>
+                            <td>Mosquée et minaret Koutoubia</td>
+                            <td>Sites historiques • Bâtiments architecturaux</td>
+                            <td>a coté de médina</td>
+                        </tr>
+                        <tr>
+                            <td>Palais El Badii</td>
+                            <td>Sites historiques</td>
+                            <td>ancienne ville</td>
+                        </tr>
+                        <tr>
+                            <td>Medersa Ben Youssef</td>
+                            <td>site historique Monument &amp; Points d'intérêt </td>
+                            <td>medina</td>
+                        </tr>
+                        <tr>
+                            <td>Gare de Marrakech</td>
+                            <td>Batiment et architecture</td>
+                            <td>nouvelle ville </td>
+                        </tr>
+                        <tr>
+                            <td>Remparts de Marrakech</td>
+                            <td>site historique Monument &amp; Points d'intérêt</td>
+                            <td>ceinture ancienne ville</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Plus d'information sur les sites</p>
+                <div><select id="site1"></select><span>Json Data</span></div>
+                <br>
+                <div><select id="site2"></select><span>Json DATA with ajax</span></div>
+                <p id="description"></p>
+            </section>
+
+        </main>
+        
+    </div>
+
+    <script src="Js/jquery-3.6.0.js"></script>
+    <script src="Js/Home.js"></script>
+</body>
+</html>
